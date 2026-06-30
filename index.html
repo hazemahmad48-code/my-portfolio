@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazem Ahmad | Thermal & Fluids Engineering Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+
+    <!-- Ambient Glow Elements -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">HAZEM<span>.AHMAD</span></a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link" data-i18n="nav_about">About</a>
+                <a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a>
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+                <a href="#experience" class="nav-link" data-i18n="nav_experience">Experience</a>
+                <a href="#certificates" class="nav-link" data-i18n="nav_certificates">Certificates</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <!-- Language Selector -->
+                <div class="lang-selector">
+                    <button id="langBtn" class="lang-btn" aria-label="Change language">
+                        <i class="fas fa-globe"></i>
+                        <span class="lang-current">EN</span>
+                        <i class="fas fa-chevron-down lang-chevron"></i>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option active" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="ar">العربية</button>
+                        <button class="lang-option" data-lang="de">Deutsch</button>
+                    </div>
+                </div>
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content scroll-reveal">
+                    <span class="hero-subtitle" data-i18n="hero_subtitle">M.Sc. Mechanical Engineering Candidate</span>
+                    <h1 class="hero-title" data-i18n="hero_title">Hazem Ahmad</h1>
+                    <h2 class="hero-tagline" data-i18n="hero_tagline">Thermal & Fluids Engineering Specialist</h2>
+                    <p class="hero-intro" data-i18n="hero_intro">Bridging the gap between classical thermodynamics and cutting-edge computational intelligence. Specializing in Energy Technology, Advanced CFD Simulation, and Sustainable HVAC/TGA Systems.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" data-i18n="btn_view_projects">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fluid Wave Divider -->
+            <div class="wave-container">
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(11, 15, 25, 0.7)" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(2, 132, 199, 0.15)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(6, 182, 212, 0.1)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--bg-primary)" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section id-target" id="about">
+            <div class="section-container">
+                <h2 class="section-title scroll-reveal" data-i18n="about_title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-img-container scroll-reveal">
+                        <div class="img-glow-outline"></div>
+                        <img src="hazem_ahmad.png" alt="Hazem Ahmad" class="profile-img">
+                    </div>
+                    <div class="about-text scroll-reveal">
+                        <h3 data-i18n="about_heading">Engineering Next-Generation Energy Infrastructure</h3>
+                        <p data-i18n="about_p1">I am an ambitious Mechanical Engineer currently completing my Master of Science in General Mechanical Engineering at the University of Duisburg-Essen, Germany. With a robust foundational background in mechanical energy engineering and verified academic equivalency from the ZAB in Germany, my core focus lies at the intersection of thermal systems, fluid dynamics, and automated intelligence.</p>
+                        <p data-i18n="about_p2">My technical philosophy centers on optimization through data. Whether deploying rigorous computational fluid dynamics (CFD) inside Ansys Fluent, executing heat load distribution math inside Carrier HAP, or building predictive logic with Machine Learning platforms, I aim to minimize carbon footprints while scaling system capacity.</p>
+                        
+                        <div class="objective-box">
+                            <h4><i class="fas fa-bullseye"></i> <span data-i18n="about_objective_title">Career Objective</span></h4>
+                            <p data-i18n="about_objective_text">To spearhead technical innovation within an agile engineering firm or research institute specializing in Renewable Energy Architectures and complex TGA/HVAC planning. I am driven to bring cross-functional, highly collaborative problem-solving to German and international engineering projects looking to transition into a decarbonized era.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section id-target" id="skills">
+            <div class="section-container">
+                <h2 class="section-title scroll-reveal" data-i18n="skills_title">Technical Expertise</h2>
+                
+                <!-- Skills Layout -->
+                <div class="skills-wrapper">
+                    <!-- Column 1: Core Competencies -->
+                    <div class="skills-category-card scroll-reveal">
+                        <h3><i class="fas fa-cogs"></i> <span data-i18n="skills_cat_core">Core Areas</span></h3>
+                        <div class="competency-grid">
+                            <div class="competency-badge" data-i18n="skills_badge_tga">Building Services Planning (HVAC/TGA)</div>
+                            <div class="competency-badge" data-i18n="skills_badge_solar">Photovoltaics & Solar Thermal</div>
+                            <div class="competency-badge" data-i18n="skills_badge_cfd">CFD Simulation (Ansys Fluent)</div>
+                            <div class="competency-badge" data-i18n="skills_badge_wind">Wind Turbine Simulation (Qblade)</div>
+                            <div class="competency-badge" data-i18n="skills_badge_thermo">Thermodynamics & Heat Transfer</div>
+                            <div class="competency-badge" data-i18n="skills_badge_load">Heating & Cooling Load Calculation</div>
+                            <div class="competency-badge" data-i18n="skills_badge_ml">Machine Learning & Data Analysis</div>
+                            <div class="competency-badge" data-i18n="skills_badge_prompt">Prompt Engineering & AI Tools</div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Software & Tools with Progress Bars -->
+                    <div class="skills-category-card scroll-reveal">
+                        <h3><i class="fas fa-laptop-code"></i> <span data-i18n="skills_cat_software">Software & IT Tools</span></h3>
+                        <div class="tools-list">
+                            <div class="tool-item">
+                                <div class="tool-info">
+                                    <span>Autodesk Revit (MEP Focus)</span>
+                                    <span class="tool-percent">90%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-info">
+                                    <span>Carrier HAP (Hourly Analysis Program)</span>
+                                    <span class="tool-percent">95%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-info">
+                                    <span>Ansys Fluent (CFD)</span>
+                                    <span class="tool-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-info">
+                                    <span>SolidWorks</span>
+                                    <span class="tool-percent">80%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-info">
+                                    <span>MATLAB / Simulink</span>
+                                    <span class="tool-percent">75%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-info">
+                                    <span>Qblade / Cameo</span>
+                                    <span class="tool-percent">70%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages & Strengths Grid -->
+                <div class="skills-grid-extra">
+                    <div class="skill-card-small scroll-reveal">
+                        <div class="card-icon"><i class="fas fa-globe"></i></div>
+                        <h3 data-i18n="skills_lang_title">Languages</h3>
+                        <ul class="extra-list">
+                            <li data-i18n="skills_lang_de"><strong>German:</strong> C1 (telc C1 Hochschule, Oct 2024)</li>
+                            <li data-i18n="skills_lang_en"><strong>English:</strong> B1 (Intermediate)</li>
+                            <li data-i18n="skills_lang_ar"><strong>Arabic:</strong> Native Speaker</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card-small scroll-reveal">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <h3 data-i18n="skills_strengths_title">Strengths</h3>
+                        <ul class="extra-list">
+                            <li data-i18n="skills_strength_1">Interdisciplinary Thinking</li>
+                            <li data-i18n="skills_strength_2">Technical Problem Solving</li>
+                            <li data-i18n="skills_strength_3">Autonomous & Reliable Working</li>
+                            <li data-i18n="skills_strength_4">Teamwork & Communication</li>
+                            <li data-i18n="skills_strength_5">AI & Data Analysis Integration</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section id-target" id="projects">
+            <div class="section-container">
+                <h2 class="section-title scroll-reveal" data-i18n="projects_title">Key Engineering Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card scroll-reveal">
+                        <div class="project-header">
+                            <i class="fas fa-biohazard project-icon"></i>
+                            <span class="project-tag" data-i18n="project_tag_finalist">Award Finalist</span>
+                        </div>
+                        <h3 data-i18n="project1_title">Biogas Waste-to-Energy Project (MEE 6)</h3>
+                        <p data-i18n="project1_desc">Served as Project Lead for the research, chemical modeling, and operational development of an organic waste-to-methane digestion system. The project successfully qualified for presentation at the prestigious International Inventors Exhibition in Damascus.</p>
+                        <div class="project-tech">
+                            <span data-i18n="project1_tech1">Bio-Energy</span><span data-i18n="project1_tech2">Waste Management</span><span data-i18n="project1_tech3">Project Management</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card scroll-reveal">
+                        <div class="project-header">
+                            <i class="fas fa-building-user project-icon"></i>
+                            <span class="project-tag" data-i18n="project_tag_thesis">B.Sc. Thesis</span>
+                        </div>
+                        <h3 data-i18n="project2_title">HVAC Infrastructure Design for a Luxury Residential Villa</h3>
+                        <p data-i18n="project2_desc">Executed full thermal load mapping, zoned architectural duct distribution, and comprehensive equipment cooling calculations. Utilized synchronized workflows between Carrier HAP and Autodesk Revit to produce deployment-ready engineering blueprints.</p>
+                        <div class="project-tech">
+                            <span data-i18n="project2_tech1">Autodesk Revit</span><span data-i18n="project2_tech2">Carrier HAP</span><span data-i18n="project2_tech3">Thermal Load Calculation</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card scroll-reveal">
+                        <div class="project-header">
+                            <i class="fas fa-wind project-icon"></i>
+                            <span class="project-tag" data-i18n="project_tag_research">M.Sc. Core Research</span>
+                        </div>
+                        <h3 data-i18n="project3_title">CFD Fluid Flow & Aerodynamic Simulations</h3>
+                        <p data-i18n="project3_desc">Ongoing master's level computational research focused on evaluating advanced heat transfer coefficients and boundary layer stresses using Ansys Fluent, alongside horizontal-axis wind turbine tracking inside Qblade.</p>
+                        <div class="project-tech">
+                            <span data-i18n="project3_tech1">Ansys Fluent</span><span data-i18n="project3_tech2">Qblade</span><span data-i18n="project3_tech3">CFD Modeling</span><span data-i18n="project3_tech4">MATLAB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience-section id-target" id="experience">
+            <div class="section-container">
+                <h2 class="section-title scroll-reveal" data-i18n="experience_title">Professional History & Education</h2>
+                <div class="timeline">
+                    <!-- Duisburg-Essen -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-i18n="exp1_date">04/2025 - Present</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp1_title">M.Sc. Candidate in General Mechanical Engineering</h3>
+                            <h4 data-i18n="exp1_org">Universität Duisburg-Essen | Duisburg, Germany</h4>
+                            <p class="timeline-details" data-i18n="exp1_desc">Currently in the 3rd academic semester with a specialized track focusing on advanced fluid dynamics (CFD), wind energy converters, and advanced convective/conductive heat transfer mechanics. Anticipated graduation set for late 2026.</p>
+                        </div>
+                    </div>
+                    <!-- McDonald's -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-i18n="exp2_date">08/2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp2_title">Team Member (Language & Teamwork Integration)</h3>
+                            <h4 data-i18n="exp2_org">McDonald's | Mülheim an der Ruhr, Germany</h4>
+                            <p class="timeline-details" data-i18n="exp2_desc">Cultivated rapid, high-stress teamwork mechanics and client resolution strategies directly within a fast-paced corporate German retail environment. Enforces practical implementation of C1 professional German language systems on a daily basis.</p>
+                        </div>
+                    </div>
+                    <!-- B.Sc. Tishreen -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-i18n="exp3_date">2018 - 2023</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp3_title">B.Sc. in Mechanical Engineering (Mechanical Energy Technology)</h3>
+                            <h4 data-i18n="exp3_org">Tishreen University | Latakia, Syria</h4>
+                            <p class="timeline-details" data-i18n="exp3_desc">5-year intensive program (10 semesters) – Graduation Grade: Good (70.41%). Thesis: Planning & cooling load calculations of an HVAC system for a residential villa using Carrier HAP & Revit. Officially recognized by ZAB as equivalent to a German Bachelor's degree.</p>
+                        </div>
+                    </div>
+                    <!-- Emdad Company -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-i18n="exp4_date">2022 - 2024</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp4_title">Mechanical Engineer - Solar Energy Specialist</h3>
+                            <h4 data-i18n="exp4_org">Power Life Company | Latakia, Syria</h4>
+                            <p class="timeline-details" data-i18n="exp4_desc">Formulated comprehensive technical studies, financial feasibility plans, and layout schematics for complex Photovoltaic (PV) and solar-thermal installations. Directly supervised field technicians through installation, validation testing, and successful client handover across five multi-family residential structures.</p>
+                        </div>
+                    </div>
+                    <!-- Hossam Ayoub -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-i18n="exp5_date">2019 - 2021</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp5_title">Mechanical Engineering Intern (TGA/HVAC)</h3>
+                            <h4 data-i18n="exp5_org">Hossam Ayoub Engineering Office | Latakia, Syria</h4>
+                            <p class="timeline-details" data-i18n="exp5_desc">Assisted senior site leads in constructing structural plumbing and air distribution plans via Autodesk Revit. Collected ambient weather arrays to run calculation software validation checks, preventing over-allocation of hardware expenses.</p>
+                        </div>
+                    </div>
+                    <!-- IT Lecturer -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-i18n="exp6_date">2016 - 2023</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp6_title">IT Lecturer & Technical Support Engineer</h3>
+                            <h4 data-i18n="exp6_org">Techno Home Center / Afakcc Center | Latakia, Syria</h4>
+                            <p class="timeline-details" data-i18n="exp6_desc">Conducted structured tech courses focusing on architectural layout software and operating system optimization models. Diagnosed structural software bugs, repaired complex processing components, and handled client hardware overhauls.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="certificates-section id-target" id="certificates">
+            <div class="section-container">
+                <h2 class="section-title scroll-reveal" data-i18n="certs_title">Certificates & Credentials</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card scroll-reveal">
+                        <div class="cert-icon"><i class="fas fa-sun"></i></div>
+                        <h3 data-i18n="cert1_title">Solar Energy & Electrical System Design</h3>
+                        <p class="cert-issuer">University at Buffalo / Coursera</p>
+                    </div>
+                    <div class="certificate-card scroll-reveal">
+                        <div class="cert-icon"><i class="fas fa-drafting-table"></i></div>
+                        <h3 data-i18n="cert2_title">AutoCAD for Product Design</h3>
+                        <p class="cert-issuer">Autodesk / Coursera</p>
+                    </div>
+                    <div class="certificate-card scroll-reveal">
+                        <div class="cert-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3 data-i18n="cert3_title">Excel for Data Analysis</h3>
+                        <p class="cert-issuer">IBM / Coursera</p>
+                    </div>
+                    <div class="certificate-card scroll-reveal">
+                        <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                        <h3 data-i18n="cert4_title">Machine Learning Onramp</h3>
+                        <p class="cert-issuer">MathWorks</p>
+                    </div>
+                    <div class="certificate-card scroll-reveal">
+                        <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                        <h3 data-i18n="cert5_title">Claude API | 1M Prompters</h3>
+                        <p class="cert-issuer">Dubai AI Community</p>
+                    </div>
+                    <div class="certificate-card scroll-reveal">
+                        <div class="cert-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3 data-i18n="cert6_title">Planung mechatronischer Produkte</h3>
+                        <p class="cert-issuer">Universität Duisburg-Essen (UDE)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section id-target" id="contact">
+            <div class="section-container">
+                <h2 class="section-title scroll-reveal" data-i18n="contact_title">Get In Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info scroll-reveal">
+                        <h3 data-i18n="contact_col_title">Let's Collaborate</h3>
+                        <p data-i18n="contact_col_desc">I am actively exploring corporate positions, project partnerships, and engineering internships across North Rhine-Westphalia (NRW) and remote networks.</p>
+                        <div class="info-details">
+                            <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="contact_info_location">Mülheim an der Ruhr, NRW, Germany</span></p>
+                            <p><i class="fas fa-envelope"></i> <em data-i18n="contact_info_email">Available via contact form below</em></p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form scroll-reveal" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label for="name" data-i18n="contact_form_name">Full Name</label>
+                            <input type="text" id="name" required placeholder="John Doe" data-i18n-placeholder="placeholder_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact_form_email">Email Address</label>
+                            <input type="email" id="email" required placeholder="john@example.com" data-i18n-placeholder="placeholder_email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact_form_message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Your project scope details..." data-i18n-placeholder="placeholder_message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="contact_form_submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p data-i18n="copyright">&copy; 2026 Hazem Ahmad. All Rights Reserved.</p>
+            <a href="#" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
